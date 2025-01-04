@@ -2,6 +2,7 @@ package com.example.rentingApp.Car.CarService;
 
 import com.example.rentingApp.Car.CarModel.CarModel;
 import com.example.rentingApp.Car.CarRepo.CarRepo;
+import com.example.rentingApp.Exeption.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,6 +22,9 @@ public class CarService {
         carRepo.save(carModel);
     }
     public void deleteCar(Long id) {
+        if (carRepo.findById(id).isEmpty()) {
+            throw new RuntimeException("Car with id " + id + " does not exist");
+        }
         carRepo.deleteById(id);
     }
     public void updateCar(CarModel carModel, Long id) {

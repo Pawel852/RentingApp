@@ -2,14 +2,12 @@ package com.example.rentingApp.Car.CarModel;
 
 import com.example.rentingApp.Client.ClientModel.ClientModel;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "car")
 public class CarModel {
@@ -22,7 +20,6 @@ public class CarModel {
     private ClientModel owner;
 
     private String brand;
-
     private String model;
     private String type;
     private int seats;
