@@ -16,8 +16,6 @@ public class CarDto {
     private int seats;
     private String fuel;
     private String transmission;
-
-
     private String color;
     private double pricePerDay;
     private String image;

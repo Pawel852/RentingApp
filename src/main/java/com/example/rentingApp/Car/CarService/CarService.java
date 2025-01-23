@@ -6,6 +6,7 @@ import com.example.rentingApp.Exeption.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class CarService {
@@ -19,6 +20,9 @@ public class CarService {
         return carRepo;
     }
     public void addCar(CarModel carModel) {
+        if (carRepo.findByModel(carModel.getModel()) != null) {
+            throw new ResourceNotFoundException("Car with model " + carModel.getModel() + " already exists");
+        }
         carRepo.save(carModel);
     }
     public void deleteCar(Long id) {
@@ -48,6 +52,9 @@ public class CarService {
     }
     public List<CarModel> getCars() {
         return carRepo.findAll();
+    }
+    public List<CarModel> availableCars(){
+        return carRepo.findAll().stream().filter(CarModel::isAvailable).collect(Collectors.toList());
     }
 
     public CarModel getCarById(Long id) {
