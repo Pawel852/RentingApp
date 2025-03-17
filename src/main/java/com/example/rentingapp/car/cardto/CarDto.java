@@ -1,4 +1,4 @@
-package com.example.rentingApp.Car.CarDto;
+package com.example.rentingapp.car.cardto;
 
 
 import lombok.Getter;

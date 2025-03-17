@@ -1,4 +1,4 @@
-package com.example.rentingApp.Exeption;
+package com.example.rentingapp.exeption;
 
 public class ResourceNotFoundException extends RuntimeException
 {

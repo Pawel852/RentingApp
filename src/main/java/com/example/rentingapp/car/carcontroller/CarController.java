@@ -1,8 +1,7 @@
-package com.example.rentingApp.Car.CarController;
+package com.example.rentingapp.car.carcontroller;
 
-import com.example.rentingApp.Car.CarModel.CarModel;
-import com.example.rentingApp.Car.CarService.CarService;
-import org.springframework.stereotype.Controller;
+import com.example.rentingapp.car.carmodel.CarModel;
+import com.example.rentingapp.car.carservice.CarService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

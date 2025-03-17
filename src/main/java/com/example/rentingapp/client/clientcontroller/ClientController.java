@@ -1,12 +1,10 @@
-package com.example.rentingApp.Client.ClientController;
+package com.example.rentingapp.client.clientcontroller;
 
-import com.example.rentingApp.Client.ClientModel.ClientModel;
-import com.example.rentingApp.Client.ClientService.ClientService;
-import org.springframework.stereotype.Controller;
+import com.example.rentingapp.client.clientmodel.ClientModel;
+import com.example.rentingapp.client.clientservice.ClientService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/clients")

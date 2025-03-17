@@ -1,12 +1,11 @@
-package com.example.rentingApp.Client.ClientService;
+package com.example.rentingapp.client.clientservice;
 
-import com.example.rentingApp.Client.ClientModel.ClientModel;
-import com.example.rentingApp.Client.ClientRepo.ClientRepo;
-import com.example.rentingApp.Exeption.ResourceNotFoundException;
+import com.example.rentingapp.client.clientmodel.ClientModel;
+import com.example.rentingapp.client.clientrepo.ClientRepo;
+import com.example.rentingapp.exeption.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ClientService {

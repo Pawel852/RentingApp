@@ -1,6 +1,6 @@
-package com.example.rentingApp.Car.CarModel;
+package com.example.rentingapp.car.carmodel;
 
-import com.example.rentingApp.Client.ClientModel.ClientModel;
+import com.example.rentingapp.client.clientmodel.ClientModel;
 import jakarta.persistence.*;
 import lombok.*;
 

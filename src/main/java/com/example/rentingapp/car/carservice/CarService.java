@@ -1,8 +1,8 @@
-package com.example.rentingApp.Car.CarService;
+package com.example.rentingapp.car.carservice;
 
-import com.example.rentingApp.Car.CarModel.CarModel;
-import com.example.rentingApp.Car.CarRepo.CarRepo;
-import com.example.rentingApp.Exeption.ResourceNotFoundException;
+import com.example.rentingapp.car.carmodel.CarModel;
+import com.example.rentingapp.car.carrepo.CarRepo;
+import com.example.rentingapp.exeption.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

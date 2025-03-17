@@ -1,7 +1,9 @@
-package com.example.rentingApp.Car.CarMapper;
+package com.example.rentingapp.car.carmapper;
 
-import com.example.rentingApp.Car.CarDto.CarDto;
-import com.example.rentingApp.Car.CarModel.CarModel;
+import com.example.rentingapp.car.cardto.CarDto;
+import com.example.rentingapp.car.carmodel.CarModel;
+
+
 
 public class CarMapper {
 

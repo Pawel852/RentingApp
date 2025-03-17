@@ -1,6 +1,6 @@
-package com.example.rentingApp.Client.ClientRepo;
+package com.example.rentingapp.client.clientrepo;
 
-import com.example.rentingApp.Client.ClientModel.ClientModel;
+import com.example.rentingapp.client.clientmodel.ClientModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
